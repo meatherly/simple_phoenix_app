@@ -29,6 +29,5 @@ config :logger, :console, format: "[$level] $message\n"
 # Configure your database
 config :simple_phoenix_app, SimplePhoenixApp.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "meatherly",
   database: "simple_phoenix_app_dev"

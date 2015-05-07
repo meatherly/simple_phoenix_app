@@ -1,0 +1,20 @@
+<h2>Listing cars for <%= @user.name %></h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Year</th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for car <- @cars do %>
+    <tr>
+      <td><%= car.name %></td>
+      <td><%= car.year %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New car", to: user_car_path(@conn, :new, @user) %>

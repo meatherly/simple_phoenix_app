@@ -1,0 +1,6 @@
+<h2>New car for <%= @user.name %></h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: user_car_path(@conn, :create, @user) %>
+
+<%= link "Back to cars", to: user_car_path(@conn, :index, @user) %>

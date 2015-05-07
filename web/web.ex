@@ -33,6 +33,8 @@ defmodule SimplePhoenixApp.Web do
 
       # Import URL helpers from the router
       import SimplePhoenixApp.Router.Helpers
+
+      alias SimplePhoenixApp.User
     end
   end
 

@@ -1,6 +1,7 @@
 <div class="jumbotron">
   <h2>Welcome to Phoenix!</h2>
-  <p class="lead">Most frameworks make you choose between speed and a productive environment. <a href="http://phoenixframework.org">Phoenix</a> and <a href="http://elixir-lang.org">Elixir</a> give you both.</p>
+  <p class="lead">Most frameworks make you choose between speed and a productive environment.</p>
+  <h2><%= link "Users", to: user_path(@conn, :index) %></h2>
 </div>
 
 <div class="row marketing">
@@ -37,4 +38,3 @@
     </ul>
   </div>
 </div>
-
